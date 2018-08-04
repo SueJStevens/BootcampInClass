@@ -8,6 +8,11 @@
 
     body {
         background-color: lightgrey;
+        margin: 0;
+        padding: 0;
+        font-family: Georgia, Times, 'Times New Roman', serif;
+        font-size: 18px;
+        line-height: 150%
     }
 
     h1 {
@@ -15,57 +20,59 @@
         background-color: black;
         margin-top: 0px;
         margin-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
     }
 
-    /* h2 heading tags */
-    
     h2 {
-      /* Put a 15-pixel margin at the top of all h2 headings. */
-      margin-left: 15px;
       margin-bottom: 0px;
-      font-size: 20px;
+      font-size: 24px;
       text-align: left;
+    }
+    
+    a {
+        color: blue;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #main-bio,
+    #contact-info,
+    #bio-image {
+        float: left;
+    }
+
+    #main-bio {
+        width: 60%;
+    }
+
+    #contact-info {
+        width: 40%;
     }
 
     img {
-        float: left;
-        padding: 15px;
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
     }
 
-    div {
+    p {
         margin: 15px;
+        line-height: 125%;
+        overflow: hidden;
     }
-
+    
     .clearfix::after {
     content: "";
     clear: both;
     display: table;
     }
-
-    p {
-        margin: 15px;
-        overflow: hidden;
-    }
-
-    .floatleft {
-        float: left;
-        width: 70%;
-    }
-
-    .floatright {
-        float: right;
-        width: 25%;
-    }
-
-    .bio {
-        width: 60%;
-        margin-top: 65px;
-        margin-left: 215px;
-    }
-
-    
 
 </style>
 
@@ -77,15 +84,15 @@
 
     <div class="container">
 
-        <section class="floatleft">
+        <section id="main-bio">
             <h2>Sue J. Stevens</h2>
-            <img src="https://media.licdn.com/dms/image/C4E03AQH93N1zldYoBg/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=sPi3FeYpop7tpJEU5J6H3q3g2AzCK66d7_Qpkm03ccQ" alt="Sue Stevens Profile Image">
+            <img id="bio-image" src="https://media.licdn.com/dms/image/C4E03AQH93N1zldYoBg/profile-displayphoto-shrink_200_200/0?e=1538611200&v=beta&t=sPi3FeYpop7tpJEU5J6H3q3g2AzCK66d7_Qpkm03ccQ" alt="Sue Stevens Profile Image">
             
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget porttitor nibh, convallis efficitur mi. Aliquam vel urna ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam pellentesque imperdiet lectus, sit amet sagittis nulla feugiat vitae. In vulputate laoreet nisl, id varius risus auctor et. Fusce convallis tortor arcu, id lacinia odio facilisis ut. Ut eu velit a turpis tempus auctor ac ut risus. Integer tempor lectus vitae venenatis gravida. Nulla vitae leo facilisis, tristique est nec, blandit sapien. Integer ac volutpat mi, in egestas augue. Nulla vehicula nec lectus quis fermentum. Etiam sit amet efficitur metus, placerat tincidunt odio. Aliquam convallis maximus accumsan.</p>
             <p>Cras efficitur sed elit eget vulputate. Phasellus tristique, velit sit amet sollicitudin euismod, nibh arcu euismod dolor, mattis fringilla massa massa porta eros. Phasellus sed lorem a tortor fringilla bibendum ac sed lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam molestie ullamcorper quam, a euismod elit fermentum sit amet. Suspendisse potenti. Mauris sagittis lectus vitae risus semper aliquam. Donec placerat tempor leo, non faucibus velit lobortis id. Aenean sed cursus mi. Suspendisse facilisis quam nibh, a eleifend nisi maximus sit amet. Nam non ipsum tincidunt, lobortis nisl et, blandit nulla.</p>
         </section>
         
-        <section class="floatright">
+        <section id="contact-info">
             <h2>Contact Info</h2>
 
             <ul>
